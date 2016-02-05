@@ -69,6 +69,18 @@
     }
     img {
         display: block;
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+        
+    }
+    @include max-screen(600px) {
+       img {
+            max-width: none;
+            height: 160px;
+            //object-fit: none; /* Do not scale the image */
+            //object-position: center;
+        }
     }
     &.slick-loading img {
         display: none;

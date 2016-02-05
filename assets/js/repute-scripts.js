@@ -179,6 +179,7 @@ $(document).ready( function() {
 		});
 
 		$('#carousel-hero .carousel-inner').slick({
+			
 			speed: 800,
 			dots: true,
 			fade: true,

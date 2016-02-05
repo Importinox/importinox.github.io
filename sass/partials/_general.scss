@@ -73,7 +73,7 @@ hr {
 
 	&:after {
 		display: block;
-		content: '......';
+		//content: '......';
 		color: $accent-color;
 		font-weight: 300;
 	}
@@ -262,6 +262,40 @@ footer {
 	font-weight: 300;
 	color: #eaeaea;
 
+
+	//text-align: center;
+	font-size: 13px;
+
+	.fspaced {
+		line-height: 2.6;
+	}
+
+	.footer-icon {
+		font-size: 1.3em;
+		color: $accent-color;
+	}
+
+	/*.container{
+
+		div[class^="col-"] {
+			min-height:230px;
+		}
+
+		div[class^="col-"]:after {
+			content: '';
+			border-right: 1px solid #eaeaea;
+			position: absolute;
+			height: 150px;
+			top: 50%;
+			right: 2%;
+			margin-top: -100px;
+		}
+
+		div[class^="col-"]:last-child:after {
+			border-right: none;
+		}
+	}*/
+
 	a {
 		color: #fff;
 
@@ -274,10 +308,11 @@ footer {
 	.container {
 		padding-top: 30px;
 		padding-bottom: 30px;
+
 	}
 
 	.logo {
-		width: 100px;
+		width: 200px;
 		margin-bottom: 15px;
 	}
 
@@ -296,9 +331,20 @@ footer {
 	}
 }
 
+@include max-screen($break-medium) {
+	footer {
+		div[class^="col-"] {
+			min-height: 0px;
+		}
+		div[class^="col-"]:after {
+			display: none;
+		}
+	}
+}
+
 .footer-heading {
 	margin: 0 0 13px 0;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 2;
 	color: #fff;
 }
