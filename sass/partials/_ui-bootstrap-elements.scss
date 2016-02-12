@@ -19,8 +19,8 @@
 
 	&:hover, &:focus, &.focus, &:active, &.active, 
 	.open > .dropdown-toggle.btn-primary {
-		background-color: darken($accent-color, 3%);
-		border-color: darken($accent-color, 8%);
+		background-color: darken($accent-color, 8%);
+		border-color: darken($accent-color, 12%);
 	}
 }
 

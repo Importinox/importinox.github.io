@@ -4079,8 +4079,8 @@ div.mc-image {
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active,
 .btn-primary .open > .dropdown-toggle.btn-primary {
-  background-color: #3c6699;
-  border-color: #355987;
+  background-color: #355987;
+  border-color: #2f5078;
 }
 
 .btn-group.open .dropdown-toggle {
